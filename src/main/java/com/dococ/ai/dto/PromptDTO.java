@@ -8,6 +8,4 @@ import java.util.List;
 public class PromptDTO {
 
     String symptom;
-
-    List<String> specializations;
 }
