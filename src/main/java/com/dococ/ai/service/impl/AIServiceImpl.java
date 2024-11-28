@@ -28,7 +28,7 @@ public class AIServiceImpl implements AIService {
     RestTemplate restTemplate;
 
     String apiKey = "AIzaSyBCsACiUxSFNrjU6jzSP4oeM7BNTVXeZ3Y";
-    String apiURL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=" + apiKey;
+    String apiURL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + apiKey;
 
     @Override
     public ResponseDTO getSpecializationRecomendation(PromptDTO promptDTO, List<String> specializations) throws JsonProcessingException {
