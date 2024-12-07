@@ -91,7 +91,8 @@ public class AIServiceImpl implements AIService {
 
     @Override
     public List<String> getAvailableSpecializations(String token) {
-        String apiURL = "http://localhost:8081/api/v1/specialization";
+        String apiURL = "http://iam-service.default.svc.cluster.local:8081/api/v1/specialization";
+        //String apiURL = "http://localhost:8081/api/v1/specialization";
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", token);
